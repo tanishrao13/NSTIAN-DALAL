@@ -138,7 +138,7 @@ export default function CartPage() {
           ))}
         </div>
 
-        {/* Cart Summary */}
+       
         <div className="lg:col-span-1">
           <div className="bg-white rounded-lg shadow-md p-6 sticky top-4">
             <h2 className="text-xl font-semibold mb-4">Cart Summary</h2>

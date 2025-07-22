@@ -46,7 +46,7 @@ export default function Navigation() {
             </Link>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="hidden sm:block flex items-center space-x-4">
             {state.user ? (
               <div className="flex items-center space-x-4">
                 <span>Welcome, {state.user.name}</span>
