@@ -167,15 +167,6 @@ export default function CartPage() {
               </Link>
             </div>
 
-            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-              <h3 className="font-semibold mb-2">Cart Features:</h3>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Save properties for later</li>
-                <li>• Compare multiple properties</li>
-                <li>• Track property prices</li>
-                <li>• Easy checkout process</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

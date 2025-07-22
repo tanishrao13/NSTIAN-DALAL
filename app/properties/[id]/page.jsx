@@ -105,14 +105,6 @@ export default function PropertyDetailPage() {
             height={400}
             className="w-full h-96 object-cover"
           />
-          <button
-            onClick={toggleFavorite}
-            className={`absolute top-4 right-4 p-3 rounded-full ${
-              isFavorite ? "bg-red-500 text-white" : "bg-white text-gray-600"
-            } hover:scale-110 transition-transform`}
-          >
-            ❤️
-          </button>
         </div>
 
         <div className="p-8">
@@ -176,16 +168,7 @@ export default function PropertyDetailPage() {
               <p className="text-gray-600">{property.reviews.length} reviews</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-4">Features</h3>
-              <div className="flex flex-wrap gap-2">
-                {property.features.map((feature, index) => (
-                  <span key={index} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-                    {feature}
-                  </span>
-                ))}
-              </div>
-            </div>
+           
           </div>
 
           <div className="mb-8">

@@ -19,7 +19,7 @@ export default function HomePage() {
     try {
       const data = await fetchProperties()
       setProperties(data)
-      setFeaturedProperties(data.slice(0, 3)) // First 3 as featured
+      setFeaturedProperties(data.slice(0, 3)) 
     } catch (error) {
       console.error("Error loading properties:", error)
     } finally {
@@ -41,16 +41,16 @@ export default function HomePage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      {/* Hero Section */}
+      
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Find Your Dream Property</h1>
         <p className="text-xl text-gray-600 mb-8">Compare properties, read reviews, and make informed decisions</p>
       </div>
 
-      {/* Search Bar */}
+    
       <SearchBar onSearch={handleSearch} isLoading={isLoading} />
 
-      {/* Featured Properties */}
+   
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">Featured Properties</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,7 +60,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* All Properties */}
       <section>
         <h2 className="text-2xl font-bold text-gray-800 mb-6">All Properties ({properties.length})</h2>
 

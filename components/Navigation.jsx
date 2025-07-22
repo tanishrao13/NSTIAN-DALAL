@@ -50,7 +50,6 @@ export default function Navigation() {
             {state.user ? (
               <div className="flex items-center space-x-4">
                 <span>Welcome, {state.user.name}</span>
-                <span className="text-red-300">❤️ {state.favorites.length}</span>
                 <button onClick={handleLogout} className="bg-red-500 hover:bg-red-600 px-3 py-1 rounded">
                   Logout
                 </button>

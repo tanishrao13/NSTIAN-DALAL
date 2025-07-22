@@ -55,14 +55,7 @@ export default function PropertyCard({ property }) {
           height={300}
           className="w-full h-48 object-cover"
         />
-        <button
-          onClick={toggleFavorite}
-          className={`absolute top-2 right-2 p-2 rounded-full ${
-            isFavorite ? "bg-red-500 text-white" : "bg-white text-gray-600"
-          } hover:scale-110 transition-transform`}
-        >
-          ❤️
-        </button>
+
       </div>
 
       <div className="p-4">
@@ -89,14 +82,7 @@ export default function PropertyCard({ property }) {
           >
             View Details
           </Link>
-          <button
-            onClick={toggleCompare}
-            className={`px-4 py-2 rounded transition-colors ${
-              isInCompare ? "bg-green-500 text-white hover:bg-green-600" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            {isInCompare ? "✓" : "+"}
-          </button>
+  
         </div>
 
         <button
